@@ -1,5 +1,7 @@
 site_name: "petclinic docs"
-site_description: "documentación proyecto petclinic"
+site_description: "Documentación proyecto petclinic"
+repo_url: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic
+edit_uri: edit/main/docs
 
 nav:
   - Home: index.md
