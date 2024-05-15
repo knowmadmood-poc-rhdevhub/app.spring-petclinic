@@ -1,6 +1,6 @@
-# periko
+# documentación petclinic
 
-eso
+página principal 
 
 ## Getting started
 
