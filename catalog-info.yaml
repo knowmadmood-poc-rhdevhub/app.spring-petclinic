@@ -19,6 +19,7 @@ metadata:
     backstage.io/kubernetes-namespace: petclinic
     backstage.io/kubernetes-label-selector: 'app=app-spring-petclinic'
     backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: "instanceName:https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/blob/main/jenkinsfile"
 spec: 
   type: website
   owner: departamento_desarrollo_software
