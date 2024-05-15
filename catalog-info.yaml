@@ -19,6 +19,7 @@ metadata:
     backstage.io/kubernetes-namespace: petclinic
     backstage.io/kubernetes-label-selector: 'app=app-spring-petclinic'
     backstage.io/techdocs-ref: dir:.
+    isJenkinsAvailable: true
 spec: 
   type: website
   owner: departamento_desarrollo_software
