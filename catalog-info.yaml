@@ -7,9 +7,9 @@ metadata:
     Aplicación demo petstore
   links:
     - title: Acceso petstore
-      url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/
+      url: https://app-spring-petclinic-petclinic.apps.cluster-9hlzs.9hlzs.sandbox961.opentlc.com/
     - title: API petstore
-      url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/swagger-ui/
+      url: https://app-spring-petclinic-petclinic.apps.cluster-9hlzs.9hlzs.sandbox961.opentlc.com/swagger-ui/
 #   - title: Issues petstore
 #      url: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/pulse
     - title: Wiki petstore
@@ -72,9 +72,9 @@ metadata:
     That way, with time, we can improve the API in general, and expose some of the new features in OAS3.
   links:
     - title: Petstore
-      url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/
+      url: https://app-spring-petclinic-petclinic.apps.cluster-9hlzs.9hlzs.sandbox961.opentlc.com/
     - title: Petstore API
-      url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/swagger-ui/
+      url: https://app-spring-petclinic-petclinic.apps.cluster-9hlzs.9hlzs.sandbox961.opentlc.com/swagger-ui/
 spec:
   type: openapi
   system: petstore
