@@ -18,7 +18,7 @@ metadata:
     backstage.io/kubernetes-id: app-spring-petclinic
     backstage.io/kubernetes-namespace: petstore
     backstage.io/kubernetes-label-selector: 'app=app-spring-petclinic'
-    backstage.io/techdocs-ref: dir:.
+#    backstage.io/techdocs-ref: dir:.
     jenkins.io/job-full-name: "instanceName:https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/blob/main/jenkinsfile"
 spec: 
   type: website
@@ -45,12 +45,13 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: mysql
     backstage.io/kubernetes-namespace: petstore
-    backstage.io/kubernetes-label-selector: 'app=mysql'
+    backstage.io/kubernetes-label-selector: 'app_rhdh=mysql_petclinic'
 spec:
   type: database
   lifecycle: development
   system: petstore
   owner: departamento_desarrollo_software
+  memberOf: petstore
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
