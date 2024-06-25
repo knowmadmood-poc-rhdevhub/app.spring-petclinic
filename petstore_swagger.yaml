@@ -9,7 +9,7 @@ info:
     license:
         name: 'Apache 2.0'
         url: 'https://www.apache.org/licenses/LICENSE-2.0'
-host: app-spring-petclinic-petstore.apps.cluster-9hlzs.9hlzs.sandbox961.opentlc.com
+host: https://app-spring-petclinic-petstore.apps.cluster-9hlzs.9hlzs.sandbox961.opentlc.com
 basePath: /
 tags:
     -
