@@ -33,7 +33,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: petstore_db
-  title: PostgreSQL Database petstore
+  title: Petstore PostgreSQL Database 
   description: PostgreSQL is a powerful, open source object-relational database system.
   links:
     - url: https://www.postgresql.org
