@@ -1,6 +1,7 @@
 
 swagger: '2.0'
-info: los cojones de san mamés
+chichi:
+info: 
     description: 'Api Documentation'
     version: '1.0'
     title: 'Api Documentation'
