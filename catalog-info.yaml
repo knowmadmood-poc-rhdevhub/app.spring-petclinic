@@ -51,7 +51,7 @@ spec:
   lifecycle: development
   system: petstore
   owner: departamento_desarrollo_software
-  memberOf: [petstore_website, petstore
+  memberOf: [petstore_website, petstore]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
