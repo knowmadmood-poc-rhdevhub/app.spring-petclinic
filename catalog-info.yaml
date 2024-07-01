@@ -46,12 +46,10 @@ spec:
   type: database
   lifecycle: development
   system: petstore
-  domain: 
   owner: departamento_desarrollo_software
   dependsOn: 
     - petstore_website
-  parent: petstore_website
-  
+  parent: petstore_website 
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
