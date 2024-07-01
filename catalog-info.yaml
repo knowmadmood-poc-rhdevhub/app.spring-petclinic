@@ -16,7 +16,7 @@ metadata:
       url: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/wiki/Sharepoint-Documentation-REPO
   annotations:
     backstage.io/kubernetes-id: app-spring-petclinic
-    backstage.io/kubernetes-namespace: petclinic
+    backstage.io/kubernetes-namespace: pets
     backstage.io/kubernetes-label-selector: 'app=app-spring-petclinic'
 spec: 
   type: website
@@ -42,7 +42,7 @@ metadata:
       icon: web
   annotations:
     backstage.io/kubernetes-id: mysql
-    backstage.io/kubernetes-namespace: petclinic
+    backstage.io/kubernetes-namespace: pets
     backstage.io/kubernetes-label-selector: 'app=mysql'
 spec:
   type: database
@@ -72,9 +72,9 @@ metadata:
     That way, with time, we can improve the API in general, and expose some of the new features in OAS3.
   links:
     - title: Petstore
-      url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/
+      url: https://app-spring-petclinic-pets.apps.cluster-fskhx.fskhx.sandbox1721.opentlc.com/
     - title: Petstore API
-      url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/swagger-ui/
+      url: https://app-spring-petclinic-pets.apps.cluster-fskhx.fskhx.sandbox1721.opentlc.com/swagger-ui/
 spec:
   type: openapi
   lifecycle: development
