@@ -1,39 +1,37 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: petstore_website
+  name: petstore
   title: Petstore demo project 
   description: |
     Aplicación demo petstore
   links:
     - title: Acceso petstore
-      url: https://app-spring-petclinic-petclinic.apps.cluster-9hlzs.9hlzs.sandbox961.opentlc.com/
+      url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/
     - title: API petstore
-      url: https://app-spring-petclinic-petclinic.apps.cluster-9hlzs.9hlzs.sandbox961.opentlc.com/swagger-ui/
+      url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/swagger-ui/
 #   - title: Issues petstore
 #      url: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/pulse
     - title: Wiki petstore
       url: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/wiki
   annotations:
     backstage.io/kubernetes-id: app-spring-petclinic
-    backstage.io/kubernetes-namespace: petstore
+    backstage.io/kubernetes-namespace: petclinic
     backstage.io/kubernetes-label-selector: 'app=app-spring-petclinic'
-#    backstage.io/techdocs-ref: dir:.
-#    jenkins.io/job-full-name: "instanceName:https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/blob/main/jenkinsfile"
 spec: 
   type: website
   owner: departamento_desarrollo_software
   providesApis:
-    - petstore_api
+    - petstore
   lifecycle: development
   system: petstore
-#  children: [petstore_db]
+  children: [petstore_db]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: petstore_db
-  title: Petstore PostgreSQL Database 
+  title: PostgreSQL Database petstore
   description: PostgreSQL is a powerful, open source object-relational database system.
   links:
     - url: https://www.postgresql.org
@@ -44,14 +42,13 @@ metadata:
       icon: web
   annotations:
     backstage.io/kubernetes-id: mysql
-    backstage.io/kubernetes-namespace: petstore
-    backstage.io/kubernetes-label-selector: 'app_rhdh=mysql_petclinic'
+    backstage.io/kubernetes-namespace: petclinic
+    backstage.io/kubernetes-label-selector: 'app=mysql'
 spec:
   type: database
   lifecycle: development
   system: petstore
   owner: departamento_desarrollo_software
-  memberOf: [petstore_website, petstore]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
@@ -64,7 +61,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: petstore_api
+  name: petstore
   title: Petstore Backend API
   description: |
     This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
@@ -73,9 +70,9 @@ metadata:
     That way, with time, we can improve the API in general, and expose some of the new features in OAS3.
   links:
     - title: Petstore
-      url: https://app-spring-petclinic-petclinic.apps.cluster-9hlzs.9hlzs.sandbox961.opentlc.com/
+      url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/
     - title: Petstore API
-      url: https://app-spring-petclinic-petclinic.apps.cluster-9hlzs.9hlzs.sandbox961.opentlc.com/swagger-ui/
+      url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/swagger-ui/
 spec:
   type: openapi
   system: petstore
@@ -83,3 +80,4 @@ spec:
   lifecycle: development
   definition:
     $openapi: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/blob/main/petstore_swagger.yaml
+    
