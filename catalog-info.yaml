@@ -28,7 +28,6 @@ spec:
   lifecycle: development
   system: petstore
   parent: petstore
-  children: [petstore_db, petstore_api]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource
@@ -53,7 +52,7 @@ spec:
   system: petstore
   domain: 
   owner: departamento_desarrollo_software
-  dependsOn: petstore_website
+  dependsOn: [petstore_website]
   parent: petstore_website
   
 ---
@@ -87,7 +86,7 @@ spec:
   system: petstore
   lifecycle: development
   owner: departamento_desarrollo_software
-  dependsOn: petstore_website
+  dependsOn: [petstore_website]
   parent: petstore_website  
   definition:
     $openapi: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/blob/main/petstore_swagger.yaml
