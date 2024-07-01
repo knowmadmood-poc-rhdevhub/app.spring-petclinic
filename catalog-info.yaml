@@ -12,6 +12,8 @@ metadata:
       url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/swagger-ui/
     - title: Wiki petstore
       url: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/wiki
+    - title: Sharepoint Doc (Deprecated)
+      url: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/wiki/Sharepoint-Documentation-REPO
   annotations:
     backstage.io/kubernetes-id: app-spring-petclinic
     backstage.io/kubernetes-namespace: petclinic
