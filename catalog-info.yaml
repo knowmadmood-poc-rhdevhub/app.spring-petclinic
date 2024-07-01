@@ -12,14 +12,10 @@ metadata:
       url: https://app-spring-petclinic-pets.apps.cluster-fskhx.fskhx.sandbox1721.opentlc.com/swagger-ui/
     - title: Wiki petstore
       url: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/wiki
-#   - title: Issues petstore
-#      url: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/pulse
   annotations:
     backstage.io/kubernetes-id: app-spring-petclinic
     backstage.io/kubernetes-namespace: petstore
     backstage.io/kubernetes-label-selector: 'app=app-spring-petclinic'
-#    backstage.io/techdocs-ref: dir:.
-#    jenkins.io/job-full-name: "instanceName:https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/blob/main/jenkinsfile"
 spec: 
   type: website
   owner: departamento_desarrollo_software
@@ -92,4 +88,3 @@ spec:
   parent: petstore_website  
   definition:
     $openapi: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/blob/main/petstore_swagger.yaml
-    
