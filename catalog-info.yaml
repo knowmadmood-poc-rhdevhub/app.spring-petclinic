@@ -7,9 +7,9 @@ metadata:
     Aplicación demo petstore
   links:
     - title: Acceso petstore
-      url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/
+      url: https://app-spring-petclinic-pets.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/
     - title: API petstore
-      url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/swagger-ui/
+      url: https://app-spring-petclinic-pets.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/swagger-ui/
     - title: Wiki petstore
       url: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/wiki
     - title: Sharepoint Doc (Deprecated)
