@@ -25,7 +25,8 @@ spec:
     - petstore_api
   lifecycle: development
   system: petstore
-#  children: [petstore_db]
+  dependsOn:
+    - petstore_db
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource
