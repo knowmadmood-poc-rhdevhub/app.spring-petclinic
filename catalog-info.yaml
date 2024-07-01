@@ -3,8 +3,7 @@ kind: Component
 metadata:
   name: petstore_website
   title: Petstore demo project 
-  description: |
-    Aplicación demo petstore
+  description: Aplicación demo petstore
   links:
     - title: Acceso petstore
       url: https://app-spring-petclinic-pets.apps.cluster-fskhx.fskhx.sandbox1721.opentlc.com/
