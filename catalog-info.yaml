@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: petstore
+  name: petstore_app
   title: Petstore demo project 
   description: |
     Aplicación demo petstore
@@ -10,8 +10,6 @@ metadata:
       url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/
     - title: API petstore
       url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/swagger-ui/
-#   - title: Issues petstore
-#      url: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/pulse
     - title: Wiki petstore
       url: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/wiki
   annotations:
@@ -22,10 +20,10 @@ spec:
   type: website
   owner: departamento_desarrollo_software
   providesApis:
-    - petstore
+    - petstore_api
   lifecycle: development
   system: petstore
-  children: [petstore_db]
+#  children: [petstore_db]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource
@@ -48,6 +46,8 @@ spec:
   type: database
   lifecycle: development
   system: petstore
+  partOf:
+    - petstore_app
   owner: departamento_desarrollo_software
 ---
 apiVersion: backstage.io/v1alpha1
@@ -61,7 +61,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: petstore
+  name: petstore_api
   title: Petstore Backend API
   description: |
     This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
@@ -75,9 +75,11 @@ metadata:
       url: https://app-spring-petclinic-petclinic.apps.cluster-rk7ld.rk7ld.sandbox2009.opentlc.com/swagger-ui/
 spec:
   type: openapi
-  system: petstore
-  owner: departamento_desarrollo_software
   lifecycle: development
+  system: petstore
+  partOf:
+    - petstore_app
+  owner: departamento_desarrollo_software
   definition:
     $openapi: https://github.com/knowmadmood-poc-rhdevhub/app.spring-petclinic/blob/main/petstore_swagger.yaml
     
