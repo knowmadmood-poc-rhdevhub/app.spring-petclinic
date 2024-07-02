@@ -90,8 +90,11 @@ metadata:
   title: '@backstage-community/plugin-jenkins'
   description: A Backstage plugin that integrates towards Jenkins
 spec:
-  lifecycle: experimental
+  lifecycle: development
+  system: petstore
   type: backstage-frontend-plugin
+  dependsOn:
+    - component:petstore_app
   owner: departamento_desarrollo_software
   annotations:
     jenkins.io/job-full-name: "https://jenkins-devops-toolset.apps.cluster-fskhx.fskhx.sandbox1721.opentlc.com/job/petstore/"
